@@ -9,6 +9,8 @@ Profile::Profile(std::string new_name, int new_age, std::string new_city, std::s
     age = new_age;
   } else {
     age = 0;
+    std::cout << "Sorry, you're too young.\n";
+    std::exit(EXIT_SUCCESS);
   }
 
 }
